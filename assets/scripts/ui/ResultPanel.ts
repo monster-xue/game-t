@@ -2,6 +2,7 @@
 
 import { _decorator, Component, Node, Label, Button } from 'cc';
 import { GameManager } from '../core/GameManager';
+import { ShareManager, ShareData } from '../systems/ShareManager';
 
 const { ccclass, property } = _decorator;
 
@@ -81,8 +82,27 @@ export class ResultPanel extends Component {
         this.hide();
     }
 
-    private onShare(): void {
-        // TODO: 调用 ShareManager 生成分享图片
-        console.log('Share functionality to be implemented');
+    private async onShare(): Promise<void> {
+        const shareManager = ShareManager.instance;
+
+        if (!shareManager) {
+            console.log('ShareManager not available');
+            return;
+        }
+
+        const data: ShareData = {
+            level: GameManager.instance.currentLevel,
+            fillRate: this._fillRate,
+            rank: this.getRankText(this._fillRate)
+        };
+
+        try {
+            const imagePath = await shareManager.generateShareImage(data);
+            if (imagePath) {
+                shareManager.shareToFriend(imagePath);
+            }
+        } catch (error) {
+            console.error('Share failed:', error);
+        }
     }
 }
