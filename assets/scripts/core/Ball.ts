@@ -1,7 +1,9 @@
 // assets/scripts/core/Ball.ts
 
-import { _decorator, Component, Node, Sprite, Color, UITransform, Vec2, RigidBody2D, CircleCollider2D } from 'cc';
+import { _decorator, Component, Node, Sprite, Color, UITransform, Vec2, RigidBody2D, CircleCollider2D, Collider2D, IPhysics2DContact, Contact2DType } from 'cc';
 import { GAME_CONFIG } from './GameConstants';
+import { VibrationManager, VibrateType } from '../systems/VibrationManager';
+import { PhysicsManager } from './PhysicsManager';
 
 const { ccclass, property } = _decorator;
 
@@ -38,6 +40,25 @@ export class Ball extends Component {
         }
 
         this._initialScale = new Vec2(this.node.scale.x, this.node.scale.y);
+
+        // 注册碰撞回调
+        this.collider.on(Contact2DType.BEGIN_CONTACT, this.onCollisionEnter, this);
+    }
+
+    onDestroy() {
+        if (this.collider) {
+            this.collider.off(Contact2DType.BEGIN_CONTACT, this.onCollisionEnter, this);
+        }
+    }
+
+    private onCollisionEnter(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null): void {
+        if (this.isDragging) return;
+
+        const speed = PhysicsManager.instance.getBallSpeed(this.rigidBody);
+
+        if (speed > GAME_CONFIG.VIBRATION.COLLISION_THRESHOLD) {
+            VibrationManager.vibrate(VibrateType.LIGHT);
+        }
     }
 
     public init(config: BallConfig): void {
