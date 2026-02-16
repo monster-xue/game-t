@@ -62,6 +62,11 @@ export class LevelLoader extends Component {
         // 初始化容器
         this.containerManager.init(level.container);
 
+        // 处理特殊行为
+        if (level.specialBehavior === 'movingContainer' && level.containerMovement) {
+            this.containerManager.enableMovingContainer(level.containerMovement);
+        }
+
         // 创建团子
         for (const ballConfig of level.balls) {
             this.ballManager.createBall(ballConfig);
