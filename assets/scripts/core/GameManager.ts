@@ -55,12 +55,16 @@ export class GameManager extends Component {
         this._gameState = state;
     }
 
-    public loadLevel(levelId: number) {
+    public async loadLevel(levelId: number) {
         this._currentLevel = levelId;
         this._stableTimer = 0;
         this.changeState(GameState.PLAYING);
 
-        // TODO: 调用 LevelLoader 加载关卡
+        try {
+            await this.levelLoader.loadLevel(levelId);
+        } catch (error) {
+            console.error('Failed to load level:', error);
+        }
     }
 
     public get currentLevel(): number {
