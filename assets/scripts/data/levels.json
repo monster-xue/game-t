@@ -85,6 +85,618 @@
       }
     },
     {
+      "id": 4,
+      "name": "窄口瓶",
+      "container": {
+        "type": "polygon",
+        "vertices": [
+          {"x": -80, "y": -200},
+          {"x": -80, "y": 50},
+          {"x": -40, "y": 50},
+          {"x": -40, "y": 200},
+          {"x": 40, "y": 200},
+          {"x": 40, "y": 50},
+          {"x": 80, "y": 50},
+          {"x": 80, "y": -200}
+        ]
+      },
+      "balls": [
+        {
+          "radius": 70,
+          "color": "#FFB5C5",
+          "position": {"x": 0, "y": 300}
+        },
+        {
+          "radius": 30,
+          "color": "#FFDAB9",
+          "position": {"x": 50, "y": 320}
+        }
+      ],
+      "winCondition": {
+        "fillRate": 0.85,
+        "stableTime": 3.0
+      }
+    },
+    {
+      "id": 5,
+      "name": "三角挑战",
+      "container": {
+        "type": "polygon",
+        "vertices": [
+          {"x": 0, "y": -180},
+          {"x": 180, "y": 120},
+          {"x": -180, "y": 120}
+        ]
+      },
+      "balls": [
+        {
+          "radius": 50,
+          "color": "#FFB5C5",
+          "position": {"x": -50, "y": 300}
+        },
+        {
+          "radius": 50,
+          "color": "#FFDAB9",
+          "position": {"x": 50, "y": 300}
+        },
+        {
+          "radius": 50,
+          "color": "#E6E6FA",
+          "position": {"x": 0, "y": 350}
+        }
+      ],
+      "winCondition": {
+        "fillRate": 0.85,
+        "stableTime": 3.0
+      }
+    },
+    {
+      "id": 6,
+      "name": "弯管",
+      "container": {
+        "type": "polygon",
+        "vertices": [
+          {"x": -150, "y": -50},
+          {"x": 0, "y": -50},
+          {"x": 0, "y": 150},
+          {"x": 150, "y": 150},
+          {"x": 150, "y": 200},
+          {"x": -150, "y": 200}
+        ]
+      },
+      "balls": [
+        {
+          "radius": 35,
+          "color": "#FFB5C5",
+          "position": {"x": -100, "y": 280}
+        },
+        {
+          "radius": 35,
+          "color": "#FFDAB9",
+          "position": {"x": -50, "y": 280}
+        },
+        {
+          "radius": 35,
+          "color": "#E6E6FA",
+          "position": {"x": 0, "y": 280}
+        }
+      ],
+      "winCondition": {
+        "fillRate": 0.80,
+        "stableTime": 3.0
+      }
+    },
+    {
+      "id": 7,
+      "name": "甜甜圈",
+      "container": {
+        "type": "multi",
+        "shapes": [
+          {
+            "type": "circle",
+            "radius": 150,
+            "center": {"x": 0, "y": 0},
+            "isHole": false
+          },
+          {
+            "type": "circle",
+            "radius": 80,
+            "center": {"x": 0, "y": 0},
+            "isHole": true
+          }
+        ]
+      },
+      "balls": [
+        {
+          "radius": 45,
+          "color": "#FFB5C5",
+          "position": {"x": -60, "y": 280}
+        },
+        {
+          "radius": 45,
+          "color": "#FFDAB9",
+          "position": {"x": 60, "y": 280}
+        },
+        {
+          "radius": 45,
+          "color": "#E6E6FA",
+          "position": {"x": -30, "y": 320}
+        },
+        {
+          "radius": 45,
+          "color": "#B0E0E6",
+          "position": {"x": 30, "y": 320}
+        }
+      ],
+      "winCondition": {
+        "fillRate": 0.85,
+        "stableTime": 3.0
+      }
+    },
+    {
+      "id": 8,
+      "name": "沙漏",
+      "container": {
+        "type": "polygon",
+        "vertices": [
+          {"x": -100, "y": -200},
+          {"x": 100, "y": -200},
+          {"x": 30, "y": 0},
+          {"x": 100, "y": 200},
+          {"x": -100, "y": 200},
+          {"x": -30, "y": 0}
+        ]
+      },
+      "balls": [
+        {
+          "radius": 60,
+          "color": "#FFB5C5",
+          "position": {"x": -60, "y": 320}
+        },
+        {
+          "radius": 60,
+          "color": "#FFDAB9",
+          "position": {"x": 60, "y": 320}
+        },
+        {
+          "radius": 30,
+          "color": "#E6E6FA",
+          "position": {"x": -20, "y": 350}
+        },
+        {
+          "radius": 30,
+          "color": "#B0E0E6",
+          "position": {"x": 20, "y": 350}
+        }
+      ],
+      "winCondition": {
+        "fillRate": 0.85,
+        "stableTime": 3.0
+      }
+    },
+    {
+      "id": 9,
+      "name": "十字架",
+      "container": {
+        "type": "polygon",
+        "vertices": [
+          {"x": -60, "y": -200},
+          {"x": 60, "y": -200},
+          {"x": 60, "y": -60},
+          {"x": 200, "y": -60},
+          {"x": 200, "y": 60},
+          {"x": 60, "y": 60},
+          {"x": 60, "y": 200},
+          {"x": -60, "y": 200},
+          {"x": -60, "y": 60},
+          {"x": -200, "y": 60},
+          {"x": -200, "y": -60},
+          {"x": -60, "y": -60}
+        ]
+      },
+      "balls": [
+        {
+          "radius": 40,
+          "color": "#FFB5C5",
+          "position": {"x": -80, "y": 280}
+        },
+        {
+          "radius": 40,
+          "color": "#FFDAB9",
+          "position": {"x": 80, "y": 280}
+        },
+        {
+          "radius": 40,
+          "color": "#E6E6FA",
+          "position": {"x": -40, "y": 320}
+        },
+        {
+          "radius": 40,
+          "color": "#B0E0E6",
+          "position": {"x": 40, "y": 320}
+        },
+        {
+          "radius": 40,
+          "color": "#FFA07A",
+          "position": {"x": 0, "y": 350}
+        }
+      ],
+      "winCondition": {
+        "fillRate": 0.85,
+        "stableTime": 3.0
+      }
+    },
+    {
+      "id": 10,
+      "name": "菱形",
+      "container": {
+        "type": "polygon",
+        "vertices": [
+          {"x": 0, "y": -220},
+          {"x": 180, "y": 0},
+          {"x": 0, "y": 220},
+          {"x": -180, "y": 0}
+        ]
+      },
+      "balls": [
+        {
+          "radius": 55,
+          "color": "#FFB5C5",
+          "position": {"x": -60, "y": 300}
+        },
+        {
+          "radius": 55,
+          "color": "#FFDAB9",
+          "position": {"x": 60, "y": 300}
+        },
+        {
+          "radius": 55,
+          "color": "#E6E6FA",
+          "position": {"x": -30, "y": 340}
+        },
+        {
+          "radius": 55,
+          "color": "#B0E0E6",
+          "position": {"x": 30, "y": 340}
+        }
+      ],
+      "winCondition": {
+        "fillRate": 0.85,
+        "stableTime": 3.0
+      }
+    },
+    {
+      "id": 11,
+      "name": "极细试管",
+      "container": {
+        "type": "polygon",
+        "vertices": [
+          {"x": -30, "y": -250},
+          {"x": 30, "y": -250},
+          {"x": 30, "y": 200},
+          {"x": -30, "y": 200}
+        ]
+      },
+      "balls": [
+        {
+          "radius": 25,
+          "color": "#FFB5C5",
+          "position": {"x": 0, "y": 320}
+        },
+        {
+          "radius": 25,
+          "color": "#FFDAB9",
+          "position": {"x": 0, "y": 360}
+        },
+        {
+          "radius": 25,
+          "color": "#E6E6FA",
+          "position": {"x": 0, "y": 400}
+        },
+        {
+          "radius": 25,
+          "color": "#B0E0E6",
+          "position": {"x": 0, "y": 280}
+        },
+        {
+          "radius": 25,
+          "color": "#FFA07A",
+          "position": {"x": 0, "y": 440}
+        }
+      ],
+      "winCondition": {
+        "fillRate": 0.90,
+        "stableTime": 3.0
+      }
+    },
+    {
+      "id": 12,
+      "name": "梯形",
+      "container": {
+        "type": "polygon",
+        "vertices": [
+          {"x": -200, "y": -150},
+          {"x": 200, "y": -150},
+          {"x": 120, "y": 150},
+          {"x": -120, "y": 150}
+        ]
+      },
+      "balls": [
+        {
+          "radius": 50,
+          "color": "#FFB5C5",
+          "position": {"x": -70, "y": 300}
+        },
+        {
+          "radius": 50,
+          "color": "#FFDAB9",
+          "position": {"x": 70, "y": 300}
+        },
+        {
+          "radius": 50,
+          "color": "#E6E6FA",
+          "position": {"x": 0, "y": 350}
+        },
+        {
+          "radius": 50,
+          "color": "#B0E0E6",
+          "position": {"x": 0, "y": 280}
+        }
+      ],
+      "winCondition": {
+        "fillRate": 0.85,
+        "stableTime": 3.0
+      }
+    },
+    {
+      "id": 13,
+      "name": "爱心",
+      "container": {
+        "type": "polygon",
+        "vertices": [
+          {"x": 0, "y": 180},
+          {"x": -150, "y": 50},
+          {"x": -80, "y": -50},
+          {"x": 0, "y": -150},
+          {"x": 80, "y": -50},
+          {"x": 150, "y": 50}
+        ]
+      },
+      "balls": [
+        {
+          "radius": 35,
+          "color": "#FFB5C5",
+          "position": {"x": -50, "y": 280}
+        },
+        {
+          "radius": 35,
+          "color": "#FFDAB9",
+          "position": {"x": 50, "y": 280}
+        },
+        {
+          "radius": 35,
+          "color": "#E6E6FA",
+          "position": {"x": -25, "y": 320}
+        },
+        {
+          "radius": 35,
+          "color": "#B0E0E6",
+          "position": {"x": 25, "y": 320}
+        },
+        {
+          "radius": 35,
+          "color": "#FFA07A",
+          "position": {"x": 0, "y": 350}
+        }
+      ],
+      "winCondition": {
+        "fillRate": 0.85,
+        "stableTime": 3.0
+      }
+    },
+    {
+      "id": 14,
+      "name": "双圈",
+      "container": {
+        "type": "multi",
+        "shapes": [
+          {
+            "type": "circle",
+            "radius": 100,
+            "center": {"x": -120, "y": 0}
+          },
+          {
+            "type": "circle",
+            "radius": 100,
+            "center": {"x": 120, "y": 0}
+          }
+        ]
+      },
+      "balls": [
+        {
+          "radius": 60,
+          "color": "#FFB5C5",
+          "position": {"x": -120, "y": 300}
+        },
+        {
+          "radius": 60,
+          "color": "#FFDAB9",
+          "position": {"x": 120, "y": 300}
+        },
+        {
+          "radius": 30,
+          "color": "#E6E6FA",
+          "position": {"x": -120, "y": 380}
+        },
+        {
+          "radius": 30,
+          "color": "#B0E0E6",
+          "position": {"x": 120, "y": 380}
+        }
+      ],
+      "winCondition": {
+        "fillRate": 0.85,
+        "stableTime": 3.0
+      }
+    },
+    {
+      "id": 15,
+      "name": "五角星",
+      "container": {
+        "type": "polygon",
+        "vertices": [
+          {"x": 0, "y": -200},
+          {"x": 50, "y": -70},
+          {"x": 190, "y": -70},
+          {"x": 80, "y": 20},
+          {"x": 120, "y": 170},
+          {"x": 0, "y": 90},
+          {"x": -120, "y": 170},
+          {"x": -80, "y": 20},
+          {"x": -190, "y": -70},
+          {"x": -50, "y": -70}
+        ]
+      },
+      "balls": [
+        {
+          "radius": 30,
+          "color": "#FFB5C5",
+          "position": {"x": -40, "y": 280}
+        },
+        {
+          "radius": 30,
+          "color": "#FFDAB9",
+          "position": {"x": 40, "y": 280}
+        },
+        {
+          "radius": 30,
+          "color": "#E6E6FA",
+          "position": {"x": 0, "y": 320}
+        },
+        {
+          "radius": 30,
+          "color": "#B0E0E6",
+          "position": {"x": -20, "y": 350}
+        },
+        {
+          "radius": 30,
+          "color": "#FFA07A",
+          "position": {"x": 20, "y": 350}
+        }
+      ],
+      "winCondition": {
+        "fillRate": 0.85,
+        "stableTime": 3.0
+      }
+    },
+    {
+      "id": 16,
+      "name": "涂鸦",
+      "container": {
+        "type": "polygon",
+        "vertices": [
+          {"x": -150, "y": -150},
+          {"x": -50, "y": -200},
+          {"x": 50, "y": -150},
+          {"x": 150, "y": -200},
+          {"x": 180, "y": 0},
+          {"x": 150, "y": 150},
+          {"x": 50, "y": 200},
+          {"x": -50, "y": 150},
+          {"x": -150, "y": 200},
+          {"x": -180, "y": 0}
+        ]
+      },
+      "balls": [
+        {
+          "radius": 40,
+          "color": "#FFB5C5",
+          "position": {"x": -80, "y": 300}
+        },
+        {
+          "radius": 40,
+          "color": "#FFDAB9",
+          "position": {"x": 80, "y": 300}
+        },
+        {
+          "radius": 40,
+          "color": "#E6E6FA",
+          "position": {"x": 0, "y": 340}
+        },
+        {
+          "radius": 40,
+          "color": "#B0E0E6",
+          "position": {"x": -40, "y": 370}
+        },
+        {
+          "radius": 40,
+          "color": "#FFA07A",
+          "position": {"x": 40, "y": 370}
+        },
+        {
+          "radius": 40,
+          "color": "#98FB98",
+          "position": {"x": 0, "y": 400}
+        }
+      ],
+      "winCondition": {
+        "fillRate": 0.85,
+        "stableTime": 3.0
+      }
+    },
+    {
+      "id": 17,
+      "name": "横梁方块",
+      "container": {
+        "type": "polygon",
+        "vertices": [
+          {"x": -120, "y": -200},
+          {"x": 120, "y": -200},
+          {"x": 120, "y": -50},
+          {"x": -40, "y": -50},
+          {"x": -40, "y": 50},
+          {"x": 120, "y": 50},
+          {"x": 120, "y": 200},
+          {"x": -120, "y": 200},
+          {"x": -120, "y": 50},
+          {"x": 40, "y": 50},
+          {"x": 40, "y": -50},
+          {"x": -120, "y": -50}
+        ]
+      },
+      "balls": [
+        {
+          "radius": 45,
+          "color": "#FFB5C5",
+          "position": {"x": -70, "y": 280}
+        },
+        {
+          "radius": 45,
+          "color": "#FFDAB9",
+          "position": {"x": 70, "y": 280}
+        },
+        {
+          "radius": 45,
+          "color": "#E6E6FA",
+          "position": {"x": 0, "y": 320}
+        },
+        {
+          "radius": 45,
+          "color": "#B0E0E6",
+          "position": {"x": -35, "y": 350}
+        },
+        {
+          "radius": 45,
+          "color": "#FFA07A",
+          "position": {"x": 35, "y": 350}
+        }
+      ],
+      "winCondition": {
+        "fillRate": 0.85,
+        "stableTime": 3.0
+      }
+    },
+    {
       "id": 18,
       "name": "晃动瓶子",
       "container": {
@@ -119,6 +731,52 @@
         "axis": "x",
         "amplitude": 100,
         "period": 2.0
+      }
+    },
+    {
+      "id": 19,
+      "name": "漏斗",
+      "container": {
+        "type": "polygon",
+        "vertices": [
+          {"x": -150, "y": -200},
+          {"x": 150, "y": -200},
+          {"x": 30, "y": 100},
+          {"x": 30, "y": 200},
+          {"x": -30, "y": 200},
+          {"x": -30, "y": 100}
+        ]
+      },
+      "balls": [
+        {
+          "radius": 90,
+          "color": "#FFB5C5",
+          "position": {"x": 0, "y": 350}
+        },
+        {
+          "radius": 15,
+          "color": "#FFDAB9",
+          "position": {"x": -15, "y": 400}
+        },
+        {
+          "radius": 15,
+          "color": "#E6E6FA",
+          "position": {"x": 15, "y": 400}
+        },
+        {
+          "radius": 15,
+          "color": "#B0E0E6",
+          "position": {"x": -8, "y": 420}
+        },
+        {
+          "radius": 15,
+          "color": "#FFA07A",
+          "position": {"x": 8, "y": 420}
+        }
+      ],
+      "winCondition": {
+        "fillRate": 0.85,
+        "stableTime": 3.0
       }
     },
     {
