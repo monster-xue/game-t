@@ -2,6 +2,7 @@
 
 import { _decorator, Component, Node, Vec2, Vec3, PolygonCollider2D, RigidBody2D, UITransform, Graphics } from 'cc';
 import { GAME_CONFIG } from './GameConstants';
+import { MovingContainer, MovementConfig } from '../physics/MovingContainer';
 
 const { ccclass, property } = _decorator;
 
@@ -23,12 +24,19 @@ export class ContainerManager extends Component {
 
     private _containerConfig: ContainerConfig;
     private _vertices: Array<{x: number, y: number}> = [];
+    private _movingContainer: MovingContainer = null;
 
     public init(config: ContainerConfig): void {
         this._containerConfig = config;
 
         // 清除旧的碰撞体
         this.removeColliders();
+
+        // 停止旧的移动
+        if (this._movingContainer) {
+            this._movingContainer.stopMovement();
+            this._movingContainer = null;
+        }
 
         // 根据类型创建碰撞体
         switch (config.type) {
@@ -42,6 +50,13 @@ export class ContainerManager extends Component {
                 this.createMultiContainer(config.shapes);
                 break;
         }
+    }
+
+    public enableMovingContainer(config: MovementConfig): void {
+        if (!this._movingContainer) {
+            this._movingContainer = this.borderNode.addComponent(MovingContainer);
+        }
+        this._movingContainer.init(config);
     }
 
     private createPolygonContainer(vertices: Array<{x: number, y: number}>): void {
