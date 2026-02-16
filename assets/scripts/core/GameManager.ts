@@ -2,11 +2,15 @@
 
 import { _decorator, Component, Node } from 'cc';
 import { GameState, GAME_CONFIG } from './GameConstants';
+import { LevelLoader } from './LevelLoader';
 
 const { ccclass, property } = _decorator;
 
 @ccclass('GameManager')
 export class GameManager extends Component {
+    @property(LevelLoader)
+    levelLoader: LevelLoader = null;
+
     @property(Node)
     containerNode: Node = null;
 
