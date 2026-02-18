@@ -1,7 +1,5 @@
 {
-  "version": "3.8.8",
   "name": "game-t",
   "uuid": "game-t-uuid",
-  "type": "3d",
-  "creator": "3.8.8"
+  "type": "3d"
 }
