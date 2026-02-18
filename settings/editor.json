@@ -1,0 +1,16 @@
+{
+  "editor-layout": "default",
+  "collision-matrix": [
+    [
+      true
+    ]
+  ],
+  "physics": {
+    "gravity": {
+      "x": 0,
+      "y": -320
+    },
+    "allowSleep": true,
+    "sleepThreshold": 0.1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "buildTasks": [],
+  "buildOptions": {
+    "wechatgame": {
+      "title": "往死里挤",
+      "orientation": {
+        "landscapeLeft": false,
+        "landscapeRight": false,
+        "portrait": true,
+        "upsideDown": false
+      }
+    },
+    "web-mobile": {
+      "title": "The Squeeze"
+    }
+  }
+}

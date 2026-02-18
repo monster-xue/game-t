@@ -1,0 +1,19 @@
+# Cocos Creator build and temp files
+build/
+temp/
+library/
+local/
+profiles/
+packages/
+
+# macOS
+.DS_Store
+
+# Node modules
+node_modules/
+
+# Editor settings
+.settings/
+
+# Log files
+*.log
