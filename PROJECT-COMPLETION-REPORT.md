@@ -11,7 +11,7 @@
 **游戏名称**: 《往死里挤》(The Squeeze)
 **游戏类型**: 物理挤压益智游戏
 **目标平台**: 微信小游戏
-**开发引擎**: Cocos Creator 3.8.x
+**开发引擎**: Cocos Creator 3.8.8
 **编程语言**: TypeScript 5.x
 
 ---
@@ -225,7 +225,7 @@ docs/
 ### 1. 打开项目
 
 ```bash
-# 启动 Cocos Creator 3.8.x
+# 启动 Cocos Creator 3.8.8
 # 打开项目目录: /Users/xuefanfei/Ffcs/aiproject/game-t
 ```
 

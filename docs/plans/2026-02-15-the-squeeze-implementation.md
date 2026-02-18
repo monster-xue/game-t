@@ -6,7 +6,7 @@
 
 **架构:** 采用单一场景复用策略（Game.scene），通过JSON配置加载20个关卡内容。核心模块包括PhysicsManager（Box2D）、BallManager（团子管理+视觉形变）、ContainerManager（动态容器生成）。物理层使用刚体+视觉形变方案实现软体效果。
 
-**技术栈:** Cocos Creator 3.8.x、TypeScript 5.x、Box2D物理引擎、微信小游戏API
+**技术栈:** Cocos Creator 3.8.8、TypeScript 5.x、Box2D物理引擎、微信小游戏API
 
 ---
 
@@ -18,7 +18,7 @@
 
 **步骤:**
 
-**Step 1: 使用 Cocos Creator 3.8.x 创建新项目**
+**Step 1: 使用 Cocos Creator 3.8.8 创建新项目**
 
 ```bash
 # 通过 Cocos Creator Dashboard 创建项目
@@ -33,7 +33,7 @@
 
 ```json
 {
-  "version": "3.8.0",
+  "version": "3.8.8",
   "name": "game-t",
   "uuid": "game-t-uuid",
   "type": "3d"

@@ -1,6 +1,6 @@
 # 《往死里挤》(The Squeeze) - 微信小游戏
 
-> 基于 Cocos Creator 3.8.x + TypeScript + Box2D 的物理挤压益智游戏
+> 基于 Cocos Creator 3.8.8 + TypeScript + Box2D 的物理挤压益智游戏
 
 **项目状态**: ✅ 核心功能开发完成
 **版本**: v1.0.0
@@ -26,7 +26,7 @@
 
 | 类别 | 技术选型 |
 |------|----------|
-| 引擎 | Cocos Creator 3.8.x |
+| 引擎 | Cocos Creator 3.8.8 |
 | 语言 | TypeScript 5.x |
 | 物理引擎 | Box2D (Cocos 内置) |
 | 平台 | 微信小游戏 |
@@ -244,7 +244,7 @@ game-t/
 
 ## 开发环境
 
-- **Cocos Creator**: 3.8.x
+- **Cocos Creator**: 3.8.8
 - **Node.js**: v16+
 - **微信开发者工具**: 最新稳定版
 

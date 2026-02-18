@@ -1,6 +1,6 @@
 # Cocos Creator 场景创建指南
 
-本文档说明如何在 Cocos Creator 3.8.x 编辑器中手动创建游戏所需的场景。
+本文档说明如何在 Cocos Creator 3.8.8 编辑器中手动创建游戏所需的场景。
 
 ---
 

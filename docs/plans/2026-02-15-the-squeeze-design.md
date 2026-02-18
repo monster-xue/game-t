@@ -1,7 +1,7 @@
 # 《往死里挤》(The Squeeze) 设计文档
 
 **日期**: 2026-02-15
-**引擎**: Cocos Creator 3.8.x
+**引擎**: Cocos Creator 3.8.8
 **语言**: TypeScript
 **平台**: 微信小游戏
 
@@ -45,7 +45,7 @@
 
 | 类别 | 技术选型 |
 |------|----------|
-| 引擎 | Cocos Creator 3.8.x |
+| 引擎 | Cocos Creator 3.8.8 |
 | 语言 | TypeScript 5.x |
 | 物理引擎 | Box2D (Cocos内置) |
 | 平台 | 微信小游戏 |

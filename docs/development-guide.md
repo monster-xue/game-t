@@ -13,7 +13,7 @@
 
 | 软件 | 版本 | 下载地址 |
 |------|------|----------|
-| Cocos Creator | 3.8.x | https://www.cocos.com/creator-download |
+| Cocos Creator | 3.8.8 | https://www.cocos.com/creator-download |
 | Node.js | v16+ | https://nodejs.org/ |
 | 微信开发者工具 | 最新稳定版 | https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html |
 | Visual Studio Code | 最新版 | https://code.visualstudio.com/ (可选) |
@@ -36,7 +36,7 @@
 
 **关键配置项**:
 
-1. **引擎版本**: Cocos Creator 3.8.x
+1. **引擎版本**: Cocos Creator 3.8.8
 2. **Canvas 设计分辨率**:
    - 宽度: 750
    - 高度: 1334
