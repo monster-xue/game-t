@@ -2,11 +2,19 @@
 
 > 基于 Cocos Creator 3.8.8 + TypeScript + Box2D 的物理挤压益智游戏
 
-**项目状态**: ✅ 核心功能开发完成
+**项目状态**: ✅ 核心功能开发完成 | ✅ 项目结构完整
 **版本**: v1.0.0
-**最后更新**: 2026-02-15
+**最后更新**: 2026-02-18
 
 ---
+
+## 🚀 快速开始
+
+**想要立即开始？** 查看 [QUICKSTART.md](QUICKSTART.md) - 5分钟快速启动指南
+
+---
+
+## 📋 项目概述
 
 ## 项目概述
 
@@ -235,10 +243,13 @@ game-t/
 
 ## 文档索引
 
+- **快速开始**: [QUICKSTART.md](QUICKSTART.md) - 5分钟快速启动
+- **开发指南**: `docs/development-guide.md` - 完整开发环境配置
+- **测试发布**: `docs/test-and-deploy-guide.md` - 测试、构建和发布流程
+- **场景创建指南**: `docs/scenes-setup-guide.md` - 场景创建详细步骤
+- **性能优化指南**: `docs/performance-optimization.md` - 性能优化建议
 - **设计文档**: `docs/plans/2026-02-15-the-squeeze-design.md`
 - **实施计划**: `docs/plans/2026-02-15-the-squeeze-implementation.md`
-- **场景创建指南**: `docs/scenes-setup-guide.md`
-- **性能优化指南**: `docs/performance-optimization.md`
 
 ---
 
