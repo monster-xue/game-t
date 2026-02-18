@@ -1,0 +1,13 @@
+{
+  "name": "game-t",
+  "version": "1.0.0",
+  "description": "The Squeeze - Cocos Creator Physics Puzzle Game",
+  "scripts": {
+    "build": "cocos compile",
+    "preview": "cocos preview"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "author": "monster-xue",
+  "license": "MIT"
+}

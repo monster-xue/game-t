@@ -1,0 +1,6 @@
+{
+  "scene-list": [
+    "db://assets/scenes/Launch.scene",
+    "db://assets/scenes/Game.scene"
+  ]
+}

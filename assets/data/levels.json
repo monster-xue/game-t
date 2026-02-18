@@ -1,0 +1,781 @@
+{
+  "levels": [
+    {
+      "id": 1,
+      "name": "初体验",
+      "container": {
+        "type": "square",
+        "width": 200,
+        "height": 200,
+        "x": 0,
+        "y": -100,
+        "wallThickness": 20
+      },
+      "balls": [
+        {
+          "radius": 50,
+          "x": 0,
+          "y": 200,
+          "type": "large"
+        }
+      ],
+      "winFillRate": 80,
+      "winStableTime": 3
+    },
+    {
+      "id": 2,
+      "name": "双球挤挤",
+      "container": {
+        "type": "circle",
+        "radius": 120,
+        "x": 0,
+        "y": -50,
+        "wallThickness": 20
+      },
+      "balls": [
+        {
+          "radius": 40,
+          "x": -60,
+          "y": 200,
+          "type": "medium"
+        },
+        {
+          "radius": 40,
+          "x": 60,
+          "y": 250,
+          "type": "medium"
+        }
+      ],
+      "winFillRate": 80,
+      "winStableTime": 3
+    },
+    {
+      "id": 3,
+      "name": "横排三杰",
+      "container": {
+        "type": "rectangle",
+        "width": 300,
+        "height": 150,
+        "x": 0,
+        "y": -75,
+        "wallThickness": 20
+      },
+      "balls": [
+        {
+          "radius": 40,
+          "x": -100,
+          "y": 200,
+          "type": "medium"
+        },
+        {
+          "radius": 40,
+          "x": 0,
+          "y": 250,
+          "type": "medium"
+        },
+        {
+          "radius": 40,
+          "x": 100,
+          "y": 200,
+          "type": "medium"
+        }
+      ],
+      "winFillRate": 80,
+      "winStableTime": 3
+    },
+    {
+      "id": 4,
+      "name": "四方皆空",
+      "container": {
+        "type": "square",
+        "width": 180,
+        "height": 180,
+        "x": 0,
+        "y": -90,
+        "wallThickness": 15
+      },
+      "balls": [
+        {
+          "radius": 35,
+          "x": -80,
+          "y": 200,
+          "type": "medium"
+        },
+        {
+          "radius": 35,
+          "x": 80,
+          "y": 250,
+          "type": "medium"
+        }
+      ],
+      "winFillRate": 85,
+      "winStableTime": 3
+    },
+    {
+      "id": 5,
+      "name": "圆形挑战",
+      "container": {
+        "type": "circle",
+        "radius": 100,
+        "x": 0,
+        "y": -50,
+        "wallThickness": 15
+      },
+      "balls": [
+        {
+          "radius": 35,
+          "x": -50,
+          "y": 180,
+          "type": "medium"
+        },
+        {
+          "radius": 35,
+          "x": 50,
+          "y": 230,
+          "type": "medium"
+        },
+        {
+          "radius": 30,
+          "x": 0,
+          "y": 280,
+          "type": "small"
+        }
+      ],
+      "winFillRate": 85,
+      "winStableTime": 3
+    },
+    {
+      "id": 6,
+      "name": "高塔坠落",
+      "container": {
+        "type": "rectangle",
+        "width": 120,
+        "height": 250,
+        "x": 0,
+        "y": -125,
+        "wallThickness": 15
+      },
+      "balls": [
+        {
+          "radius": 30,
+          "x": 0,
+          "y": 200,
+          "type": "small"
+        },
+        {
+          "radius": 30,
+          "x": 0,
+          "y": 270,
+          "type": "small"
+        },
+        {
+          "radius": 30,
+          "x": 0,
+          "y": 340,
+          "type": "small"
+        }
+      ],
+      "winFillRate": 85,
+      "winStableTime": 3
+    },
+    {
+      "id": 7,
+      "name": "四平八稳",
+      "container": {
+        "type": "square",
+        "width": 220,
+        "height": 220,
+        "x": 0,
+        "y": -110,
+        "wallThickness": 18
+      },
+      "balls": [
+        {
+          "radius": 38,
+          "x": -80,
+          "y": 180,
+          "type": "medium"
+        },
+        {
+          "radius": 38,
+          "x": 80,
+          "y": 230,
+          "type": "medium"
+        },
+        {
+          "radius": 38,
+          "x": -80,
+          "y": 280,
+          "type": "medium"
+        },
+        {
+          "radius": 38,
+          "x": 80,
+          "y": 330,
+          "type": "medium"
+        }
+      ],
+      "winFillRate": 82,
+      "winStableTime": 3
+    },
+    {
+      "id": 8,
+      "name": "小球进洞",
+      "container": {
+        "type": "circle",
+        "radius": 90,
+        "x": 0,
+        "y": -45,
+        "wallThickness": 18
+      },
+      "balls": [
+        {
+          "radius": 25,
+          "x": -40,
+          "y": 150,
+          "type": "small"
+        },
+        {
+          "radius": 25,
+          "x": 40,
+          "y": 190,
+          "type": "small"
+        },
+        {
+          "radius": 25,
+          "x": -40,
+          "y": 230,
+          "type": "small"
+        },
+        {
+          "radius": 25,
+          "x": 40,
+          "y": 270,
+          "type": "small"
+        }
+      ],
+      "winFillRate": 88,
+      "winStableTime": 3
+    },
+    {
+      "id": 9,
+      "name": "狭窄通道",
+      "container": {
+        "type": "rectangle",
+        "width": 100,
+        "height": 200,
+        "x": 0,
+        "y": -100,
+        "wallThickness": 20
+      },
+      "balls": [
+        {
+          "radius": 35,
+          "x": 0,
+          "y": 200,
+          "type": "medium"
+        },
+        {
+          "radius": 35,
+          "x": 0,
+          "y": 280,
+          "type": "medium"
+        }
+      ],
+      "winFillRate": 85,
+      "winStableTime": 3
+    },
+    {
+      "id": 10,
+      "name": "五子登科",
+      "container": {
+        "type": "rectangle",
+        "width": 280,
+        "height": 180,
+        "x": 0,
+        "y": -90,
+        "wallThickness": 18
+      },
+      "balls": [
+        {
+          "radius": 32,
+          "x": -100,
+          "y": 170,
+          "type": "medium"
+        },
+        {
+          "radius": 32,
+          "x": -50,
+          "y": 220,
+          "type": "medium"
+        },
+        {
+          "radius": 32,
+          "x": 0,
+          "y": 270,
+          "type": "medium"
+        },
+        {
+          "radius": 32,
+          "x": 50,
+          "y": 220,
+          "type": "medium"
+        },
+        {
+          "radius": 32,
+          "x": 100,
+          "y": 170,
+          "type": "medium"
+        }
+      ],
+      "winFillRate": 83,
+      "winStableTime": 3
+    },
+    {
+      "id": 11,
+      "name": "大圆小圆",
+      "container": {
+        "type": "circle",
+        "radius": 130,
+        "x": 0,
+        "y": -65,
+        "wallThickness": 20
+      },
+      "balls": [
+        {
+          "radius": 55,
+          "x": 0,
+          "y": 200,
+          "type": "large"
+        },
+        {
+          "radius": 28,
+          "x": -60,
+          "y": 280,
+          "type": "small"
+        },
+        {
+          "radius": 28,
+          "x": 60,
+          "y": 330,
+          "type": "small"
+        }
+      ],
+      "winFillRate": 80,
+      "winStableTime": 3
+    },
+    {
+      "id": 12,
+      "name": "六六大顺",
+      "container": {
+        "type": "rectangle",
+        "width": 300,
+        "height": 200,
+        "x": 0,
+        "y": -100,
+        "wallThickness": 18
+      },
+      "balls": [
+        {
+          "radius": 30,
+          "x": -120,
+          "y": 160,
+          "type": "small"
+        },
+        {
+          "radius": 30,
+          "x": -60,
+          "y": 200,
+          "type": "small"
+        },
+        {
+          "radius": 30,
+          "x": 0,
+          "y": 240,
+          "type": "small"
+        },
+        {
+          "radius": 30,
+          "x": 60,
+          "y": 200,
+          "type": "small"
+        },
+        {
+          "radius": 30,
+          "x": 120,
+          "y": 160,
+          "type": "small"
+        },
+        {
+          "radius": 30,
+          "x": 0,
+          "y": 300,
+          "type": "small"
+        }
+      ],
+      "winFillRate": 84,
+      "winStableTime": 3
+    },
+    {
+      "id": 13,
+      "name": "深井求救",
+      "container": {
+        "type": "rectangle",
+        "width": 90,
+        "height": 280,
+        "x": 0,
+        "y": -140,
+        "wallThickness": 22
+      },
+      "balls": [
+        {
+          "radius": 28,
+          "x": 0,
+          "y": 180,
+          "type": "small"
+        },
+        {
+          "radius": 28,
+          "x": 0,
+          "y": 240,
+          "type": "small"
+        },
+        {
+          "radius": 28,
+          "x": 0,
+          "y": 300,
+          "type": "small"
+        }
+      ],
+      "winFillRate": 88,
+      "winStableTime": 3
+    },
+    {
+      "id": 14,
+      "name": "宽口浅底",
+      "container": {
+        "type": "trapezoid",
+        "topWidth": 260,
+        "bottomWidth": 180,
+        "height": 140,
+        "x": 0,
+        "y": -70,
+        "wallThickness": 18
+      },
+      "balls": [
+        {
+          "radius": 38,
+          "x": -80,
+          "y": 170,
+          "type": "medium"
+        },
+        {
+          "radius": 38,
+          "x": 80,
+          "y": 220,
+          "type": "medium"
+        },
+        {
+          "radius": 38,
+          "x": 0,
+          "y": 270,
+          "type": "medium"
+        }
+      ],
+      "winFillRate": 82,
+      "winStableTime": 3
+    },
+    {
+      "id": 15,
+      "name": "七星连珠",
+      "container": {
+        "type": "circle",
+        "radius": 140,
+        "x": 0,
+        "y": -70,
+        "wallThickness": 18
+      },
+      "balls": [
+        {
+          "radius": 28,
+          "x": -80,
+          "y": 150,
+          "type": "small"
+        },
+        {
+          "radius": 28,
+          "x": -40,
+          "y": 190,
+          "type": "small"
+        },
+        {
+          "radius": 28,
+          "x": 0,
+          "y": 230,
+          "type": "small"
+        },
+        {
+          "radius": 28,
+          "x": 40,
+          "y": 190,
+          "type": "small"
+        },
+        {
+          "radius": 28,
+          "x": 80,
+          "y": 150,
+          "type": "small"
+        },
+        {
+          "radius": 28,
+          "x": -40,
+          "y": 270,
+          "type": "small"
+        },
+        {
+          "radius": 28,
+          "x": 40,
+          "y": 270,
+          "type": "small"
+        }
+      ],
+      "winFillRate": 85,
+      "winStableTime": 3
+    },
+    {
+      "id": 16,
+      "name": "双管齐下",
+      "container": {
+        "type": "double-rectangle",
+        "width1": 100,
+        "height1": 200,
+        "width2": 100,
+        "height2": 200,
+        "gap": 50,
+        "x": 0,
+        "y": -100,
+        "wallThickness": 18
+      },
+      "balls": [
+        {
+          "radius": 32,
+          "x": -75,
+          "y": 180,
+          "type": "medium"
+        },
+        {
+          "radius": 32,
+          "x": -75,
+          "y": 250,
+          "type": "medium"
+        },
+        {
+          "radius": 32,
+          "x": 75,
+          "y": 180,
+          "type": "medium"
+        },
+        {
+          "radius": 32,
+          "x": 75,
+          "y": 250,
+          "type": "medium"
+        }
+      ],
+      "winFillRate": 83,
+      "winStableTime": 3
+    },
+    {
+      "id": 17,
+      "name": "八仙过海",
+      "container": {
+        "type": "rectangle",
+        "width": 320,
+        "height": 220,
+        "x": 0,
+        "y": -110,
+        "wallThickness": 18
+      },
+      "balls": [
+        {
+          "radius": 28,
+          "x": -120,
+          "y": 150,
+          "type": "small"
+        },
+        {
+          "radius": 28,
+          "x": -60,
+          "y": 190,
+          "type": "small"
+        },
+        {
+          "radius": 28,
+          "x": 0,
+          "y": 230,
+          "type": "small"
+        },
+        {
+          "radius": 28,
+          "x": 60,
+          "y": 190,
+          "type": "small"
+        },
+        {
+          "radius": 28,
+          "x": 120,
+          "y": 150,
+          "type": "small"
+        },
+        {
+          "radius": 28,
+          "x": -90,
+          "y": 270,
+          "type": "small"
+        },
+        {
+          "radius": 28,
+          "x": 0,
+          "y": 290,
+          "type": "small"
+        },
+        {
+          "radius": 28,
+          "x": 90,
+          "y": 270,
+          "type": "small"
+        }
+      ],
+      "winFillRate": 84,
+      "winStableTime": 3
+    },
+    {
+      "id": 18,
+      "name": "晃动瓶子",
+      "container": {
+        "type": "circle-moving",
+        "radius": 110,
+        "x": 0,
+        "y": -55,
+        "wallThickness": 20,
+        "moveAmplitude": 100,
+        "movePeriod": 2
+      },
+      "balls": [
+        {
+          "radius": 38,
+          "x": -60,
+          "y": 170,
+          "type": "medium"
+        },
+        {
+          "radius": 38,
+          "x": 60,
+          "y": 220,
+          "type": "medium"
+        },
+        {
+          "radius": 38,
+          "x": 0,
+          "y": 270,
+          "type": "medium"
+        }
+      ],
+      "winFillRate": 82,
+      "winStableTime": 3
+    },
+    {
+      "id": 19,
+      "name": "九九归一",
+      "container": {
+        "type": "circle",
+        "radius": 150,
+        "x": 0,
+        "y": -75,
+        "wallThickness": 18
+      },
+      "balls": [
+        {
+          "radius": 26,
+          "x": -100,
+          "y": 140,
+          "type": "small"
+        },
+        {
+          "radius": 26,
+          "x": -60,
+          "y": 180,
+          "type": "small"
+        },
+        {
+          "radius": 26,
+          "x": -20,
+          "y": 220,
+          "type": "small"
+        },
+        {
+          "radius": 26,
+          "x": 20,
+          "y": 180,
+          "type": "small"
+        },
+        {
+          "radius": 26,
+          "x": 60,
+          "y": 140,
+          "type": "small"
+        },
+        {
+          "radius": 26,
+          "x": -80,
+          "y": 260,
+          "type": "small"
+        },
+        {
+          "radius": 26,
+          "x": -20,
+          "y": 280,
+          "type": "small"
+        },
+        {
+          "radius": 26,
+          "x": 40,
+          "y": 260,
+          "type": "small"
+        },
+        {
+          "radius": 26,
+          "x": 0,
+          "y": 320,
+          "type": "small"
+        }
+      ],
+      "winFillRate": 86,
+      "winStableTime": 3
+    },
+    {
+      "id": 20,
+      "name": "终极挑战",
+      "container": {
+        "type": "rectangle-narrow",
+        "width": 80,
+        "height": 250,
+        "x": 0,
+        "y": -125,
+        "wallThickness": 20
+      },
+      "balls": [
+        {
+          "radius": 25,
+          "segments": 5,
+          "segmentLength": 20,
+          "x": 0,
+          "y": 180,
+          "type": "chain"
+        }
+      ],
+      "winFillRate": 85,
+      "winStableTime": 4
+    }
+  ]
+}
