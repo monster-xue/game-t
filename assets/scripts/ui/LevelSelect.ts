@@ -1,7 +1,8 @@
 // assets/scripts/ui/LevelSelect.ts
 
-import { _decorator, Component, Node, Button, Label, Prefab, instantiate } from 'cc';
+import { _decorator, Component, Node, Button, Label, Prefab, instantiate, Color } from 'cc';
 import { GameManager } from '../core/GameManager';
+import { TextureGenerator } from '../utils/TextureGenerator';
 
 const { ccclass, property } = _decorator;
 
@@ -71,9 +72,11 @@ export class LevelSelect extends Component {
         // 添加Button
         const button = item.addComponent(Button);
 
-        // 添加背景Sprite
+        // 添加背景Sprite - 使用圆角矩形纹理
         const sprite = item.addComponent('cc.Sprite') as any;
-        // TODO: 设置默认图片
+        const pinkColor = new Color();
+        Color.fromHEX(pinkColor, '#FFB5C5');
+        sprite.spriteFrame = TextureGenerator.createRoundedRectTexture(100, 100, 15, pinkColor);
 
         // 添加文字Label
         const labelNode = new Node('Label');
@@ -81,6 +84,10 @@ export class LevelSelect extends Component {
         const label = labelNode.addComponent('cc.Label') as any;
         label.string = levelId.toString();
         label.fontSize = 40;
+        // 设置标签位置居中
+        const labelTransform = labelNode.addComponent('cc.UITransform') as any;
+        labelTransform.setContentSize(80, 80);
+        labelNode.setPosition(0, 0);
 
         return item;
     }

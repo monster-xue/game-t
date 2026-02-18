@@ -1,7 +1,8 @@
 // assets/scripts/ui/TopBar.ts
 
-import { _decorator, Component, Node, Label, Button } from 'cc';
+import { _decorator, Component, Node, Label, Button, Sprite, Color } from 'cc';
 import { GameManager } from '../core/GameManager';
+import { TextureGenerator } from '../utils/TextureGenerator';
 
 const { ccclass, property } = _decorator;
 
@@ -20,6 +21,11 @@ export class TopBar extends Component {
     retryButton: Button = null;
 
     onLoad() {
+        // 为按钮添加背景
+        this.setupButtonBackground(this.backButton, '#B0E0E6');
+        this.setupButtonBackground(this.pauseButton, '#E6E6FA');
+        this.setupButtonBackground(this.retryButton, '#FFDAB9');
+
         // 注册按钮事件
         if (this.backButton) {
             this.backButton.node.on(Button.EventType.CLICK, this.onBack, this);
@@ -33,6 +39,21 @@ export class TopBar extends Component {
 
         // 监听关卡变化
         this.updateLevelDisplay();
+    }
+
+    private setupButtonBackground(button: Button, colorHex: string): void {
+        if (!button) return;
+
+        let sprite = button.node.getComponent(Sprite);
+        if (!sprite) {
+            sprite = button.node.addComponent(Sprite);
+        }
+
+        if (!sprite.spriteFrame) {
+            const bgColor = new Color();
+            Color.fromHEX(bgColor, colorHex);
+            sprite.spriteFrame = TextureGenerator.createRoundedRectTexture(80, 60, 10, bgColor);
+        }
     }
 
     onDestroy() {

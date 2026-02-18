@@ -4,6 +4,7 @@ import { _decorator, Component, Node, Sprite, Color, UITransform, Vec2, RigidBod
 import { GAME_CONFIG } from './GameConstants';
 import { VibrationManager, VibrateType } from '../systems/VibrationManager';
 import { PhysicsManager } from './PhysicsManager';
+import { TextureGenerator } from '../utils/TextureGenerator';
 
 const { ccclass, property } = _decorator;
 
@@ -86,10 +87,11 @@ export class Ball extends Component {
         // 设置位置
         this.node.setPosition(config.position.x, config.position.y);
 
-        // 设置颜色
+        // 设置颜色并生成圆形纹理
         const color = new Color();
         Color.fromHEX(color, config.color);
-        this.sprite.color = color;
+        this.sprite.spriteFrame = TextureGenerator.createGradientCircleTexture(config.radius, color);
+        this.sprite.color = new Color(255, 255, 255, 255); // 使用白色，让纹理颜色显示
     }
 
     public get config(): BallConfig {

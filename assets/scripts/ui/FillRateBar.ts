@@ -2,6 +2,7 @@
 
 import { _decorator, Component, Node, Sprite, UITransform, Label, Color } from 'cc';
 import { GAME_CONFIG } from '../core/GameConstants';
+import { TextureGenerator } from '../utils/TextureGenerator';
 
 const { ccclass, property } = _decorator;
 
@@ -17,6 +18,25 @@ export class FillRateBar extends Component {
     backgroundNode: Node = null;
 
     private _currentFillRate: number = 0;
+
+    onLoad() {
+        // 初始化背景纹理
+        if (this.backgroundNode) {
+            const bgSprite = this.backgroundNode.getComponent(Sprite);
+            if (bgSprite && !bgSprite.spriteFrame) {
+                const bgColor = new Color();
+                Color.fromHEX(bgColor, '#CCCCCC');
+                bgSprite.spriteFrame = TextureGenerator.createSolidTexture(500, 30, bgColor);
+            }
+        }
+
+        // 初始化进度条纹理
+        if (this.barSprite && !this.barSprite.spriteFrame) {
+            const barColor = new Color();
+            Color.fromHEX(barColor, '#64C864');
+            this.barSprite.spriteFrame = TextureGenerator.createSolidTexture(500, 30, barColor);
+        }
+    }
 
     public updateFillRate(fillRate: number): void {
         this._currentFillRate = fillRate;

@@ -1,8 +1,9 @@
 // assets/scripts/ui/ResultPanel.ts
 
-import { _decorator, Component, Node, Label, Button } from 'cc';
+import { _decorator, Component, Node, Label, Button, Sprite, Color, UITransform } from 'cc';
 import { GameManager } from '../core/GameManager';
 import { ShareManager, ShareData } from '../systems/ShareManager';
+import { TextureGenerator } from '../utils/TextureGenerator';
 
 const { ccclass, property } = _decorator;
 
@@ -27,6 +28,20 @@ export class ResultPanel extends Component {
 
     onLoad() {
         this.node.active = false;
+
+        // 添加半透明背景
+        const bgSprite = this.node.getComponent(Sprite);
+        if (!bgSprite) {
+            const sprite = this.node.addComponent(Sprite);
+            const bgColor = new Color(0, 0, 0, 200); // 半透明黑色
+            sprite.spriteFrame = TextureGenerator.createSolidTexture(500, 400, bgColor);
+        }
+
+        // 设置节点大小
+        const transform = this.node.getComponent(UITransform);
+        if (transform) {
+            transform.setContentSize(500, 400);
+        }
 
         if (this.nextLevelButton) {
             this.nextLevelButton.node.on(Button.EventType.CLICK, this.onNextLevel, this);
